@@ -3,8 +3,8 @@
 
 extesion 
 
-extension UIImage {
-    func resizeTopAlignedToFill(newWidth: CGFloat) -> UIImage? {
+    extension UIImage {
+        func resizeTopAlignedToFill(newWidth: CGFloat) -> UIImage? {
         let newHeight = size.height * newWidth / size.width
         let newSize = CGSize(width: newWidth, height: newHeight)
         UIGraphicsBeginImageContextWithOptions(newSize, false, UIScreen.main.scale)
@@ -12,8 +12,8 @@ extension UIImage {
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return newImage
+       }
     }
-}
 
 DWCrpHomeScreenViewController
 
