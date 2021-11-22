@@ -17,7 +17,7 @@ extension UIImage {
 
 DWCrpHomeScreenViewController
 
-func prepareUI() {
+    func prepareUI() {
         btnTakeRiskProfile.isEnabled = false
         imgTopBackground.layoutIfNeeded()
         imgBackground.layoutIfNeeded()
